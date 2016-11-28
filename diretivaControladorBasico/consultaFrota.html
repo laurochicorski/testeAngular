@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="transportadoraApp">
+<head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-controller="frotaCtrl as ctrl">
+    <div class="container">
+        <table class="table">
+            <tr>
+                <td>Placa</td>
+                <td>Marca</td>
+                <td>Modelo</td>
+                <td>Cor</td>
+                <td>Ano</td>
+            </tr>
+            <tr ng-repeat="veiculo in ctrl.veiculos">
+                <td>{{veiculo.placa}}</td>
+                <td>{{veiculo.marca}}</td>
+                <td>{{veiculo.marca}}</td>
+                <td>{{veiculo.cor}}</td>
+                <td>{{veiculo.ano}}</td>
+            </tr>
+        </table>
+    </div>
+    
+<script src="angular/angular.min.js"></script>
+<script src="consultaFrota.js"></script>
+</body>
+</html>
